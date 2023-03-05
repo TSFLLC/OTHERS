@@ -1,0 +1,17 @@
+SHRINK DATABASE
+--0. Display all logical logNmae
+SELECT name FROM sys.master_files WHERE type_desc = 'LOG'
+
+--1. Check logical Name DATABASE FILES
+sp_helpdb[DBNAMES]
+
+--2. Put database in simple recovery mode
+    ALTER DATABASE [DBName]  SET RECOVERY SIMPLE  
+        GO
+
+--3. Shrink Files
+        DBCC SHRINKFILE (2, 10)
+        GO
+
+--4. Put database back to Full recovery mode
+    ALTER DATABASE [FLXMI2]    SET RECOVERY FULL
