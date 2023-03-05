@@ -1,0 +1,13 @@
+SCRIPT TO MOVE DATA to another drive.
+
+Run SP_HELPDB[DBNames] to check the logicalNames
+
+	a. ALTER DATABASE DBNames
+MODIFY FILE (NAME = File1Name, FILENAME = 'C:\MSSQL\DATA\File1.mdf'); -- Destination 
+
+
+	a. ALTER DATABASE DBNames SET OFFLINE;
+
+	a. Manually move files to new dest
+	
+b. ALTER DATABASE DBName SET ONLINE;
