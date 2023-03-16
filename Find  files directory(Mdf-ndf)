@@ -1,0 +1,14 @@
+	--For All databases
+USE master;
+SELECT 
+  name 'Logical Name', 
+  physical_name 'File Location'
+FROM sys.master_files;
+
+
+	--For specific database
+USE [DBName];
+SELECT
+  name 'Logical Name', 
+  physical_name 'File Location'
+FROM sys.database_files;
