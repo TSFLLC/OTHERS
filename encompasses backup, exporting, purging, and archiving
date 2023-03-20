@@ -1,0 +1,27 @@
+
+1. Backup: Use the following query to back up the database:
+
+BACKUP DATABASE [database_name]
+TO DISK = 'backup_path\backup_file.bak'
+WITH INIT,FORMAT;
+
+Replace [database_name] with the name of the database you want to back up, and backup_path\backup_file.bak with the file path and name you want to give the backup file.
+
+2. Exporting: Use the following query to export data from tables in the database to a file:
+
+BCP [database_name].[schema_name].[table_name] out "[export_path]\[table_name].csv" -c -t ',' -T
+
+Replace [database_name], [schema_name], and [table_name] with the database, schema, and table names respectively. [export_path] is the path where the exported files will be stored.
+
+3. Purging: Use the following query to delete older data from tables in the database:
+
+DELETE FROM [table_name]
+WHERE [date_column] < DATEADD(day, -30, GETDATE())
+
+Replace [table_name] with the name of the table you want to purge, and [date_column] with the name of the column containing the date values.
+
+4. Archiving: Use the following query to move older data from the current database to an archive database:
+
+INSERT INTO [archive_database_name].[schema_name].[table_name] SELECT * FROM [database_name].[schema_name].[table_name] WHERE [date_column] < DATEADD(day, -365, GETDATE())
+
+Replace [archive_database_name], [schema_name], [table_name], and [date_column] as appropriate for your database schema.
