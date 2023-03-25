@@ -2,3 +2,11 @@
 Disable-AzContextAutosave -Scope Process
 # Connect to Azure with system-assigned managed identity
 $AzureContext = (Connect-AzAccount -Identity).context
+
+
+
+
+
+
+Link to set up manage identity
+https://stackoverflow.com/questions/72230503/how-to-run-an-azure-sql-server-stored-procedure-using-an-automation-account-runb
