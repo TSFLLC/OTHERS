@@ -1,0 +1,11 @@
+SELECT
+  name AS trigger_name,
+  object_name(parent_obj) AS table_name,
+  OBJECT_DEFINITION(id) AS trigger_text
+FROM
+  sysobjects
+WHERE
+  xtype = 'TR'
+ORDER BY
+  table_name,
+  trigger_name;
