@@ -1,0 +1,186 @@
+select count(*) NumberOfDBs from sys.databases;
+
+DROP TABLE IF EXISTS #t1;
+DROP TABLE IF EXISTS #t2;
+DROP TABLE IF EXISTS #t3;
+DROP TABLE IF EXISTS #t4;
+DROP TABLE IF EXISTS #t5;
+DROP TABLE IF EXISTS #t6;
+DROP TABLE IF EXISTS #t7;
+DROP TABLE IF EXISTS #t8;
+
+
+SELECT @@servername Servername,
+       @@version Version,
+       DEFAULT_DOMAIN() [DomainName],
+       SERVERPROPERTY('IsClustered') IsClustered,
+       SERVERPROPERTY('ComputerNamePhysicalNetBIOS') ActiveNode,
+       CONNECTIONPROPERTY('local_net_address') AS 'local_net_address',
+       name [Database],
+       [Recovery Model] = recovery_model_desc
+INTO #t1
+FROM sys.databases
+WHERE name <> 'tempdb'
+ORDER BY name;
+
+SELECT database_name,
+       isnull(physical_device_name,'-') LastFullBackup_AsOf_20230405,
+       ROW_NUMBER() OVER (PARTITION BY database_name ORDER BY backup_start_date DESC) AS RowNum
+INTO #t5
+FROM msdb..backupset BS
+    JOIN msdb.dbo.backupmediafamily BMF
+        ON BS.media_set_id = BMF.media_set_id
+WHERE BS.type = 'D'
+      AND (CONVERT(DATETIME, BS.backup_start_date, 102) > GETDATE() - 4);
+
+select * into #t8 from #t5 where RowNum = 1
+
+IF EXISTS (SELECT name FROM sys.databases WHERE name = 'Distribution')
+BEGIN
+    SELECT DISTINCT
+           srv.srvname publication_server,
+           a.publisher_db,
+           p.publication publication_name,
+           ss.srvname subscription_server,
+           s.subscriber_db
+    INTO #t2
+    FROM distribution..MSarticles a WITH (NOLOCK)
+        JOIN distribution..MSpublications p WITH (NOLOCK)
+            ON a.publication_id = p.publication_id
+        JOIN distribution..MSsubscriptions s WITH (NOLOCK)
+            ON p.publication_id = s.publication_id
+        JOIN master..sysservers ss WITH (NOLOCK)
+            ON s.subscriber_id = ss.srvid
+        JOIN master..sysservers srv WITH (NOLOCK)
+            ON srv.srvid = p.publisher_id
+        JOIN distribution..MSdistribution_agents da WITH (NOLOCK)
+            ON da.publisher_id = p.publisher_id
+               AND da.subscriber_id = s.subscriber_id
+    ORDER BY 1,2,3;
+END;
+ELSE
+BEGIN
+    SELECT '-' publication_server,
+           '-' publisher_db,
+           '-' publication_name,
+           '-' subscription_server,
+           '-' subscriber_db
+    INTO #t4;
+END;
+
+
+
+SELECT distinct DB.name,
+       ISNULL(DM.mirroring_partner_instance, '-') AS MirrorServer,
+       CASE DM.mirroring_safety_level
+           WHEN 1 THEN
+               'HIGH PERFORMANCE'
+           WHEN 2 THEN
+               'HIGH SAFETY'
+           ELSE
+               '-'
+       END AS 'OperatingMode',
+   isnull(mirroring_partner_name,'-') mirroring_partner_name,
+
+       dm.mirroring_role_desc
+INTO #t3
+FROM sys.databases DB
+    LEFT OUTER JOIN sys.database_mirroring DM
+        ON DB.database_id = DM.database_id
+    JOIN sys.master_files MF
+        ON MF.database_id = DB.database_id
+           where type = 0
+ORDER BY DB.name;
+
+
+IF EXISTS (SELECT name FROM sys.databases WHERE name = 'Distribution')
+BEGIN
+    SELECT c.*,
+           isnull(LastFullBackup_AsOf_20230405,'-') LastFullBackup_AsOf_20230405,
+           ISNULL(b.publication_name, '-') publication_name,
+           ISNULL(subscription_server, '-') subscription_server,
+           ISNULL(subscriber_db, '-') subscriber_db,
+           d.MirrorServer,
+           ISNULL(d.mirroring_role_desc, '-') mirroring_role,
+           d.OperatingMode,
+           d.mirroring_partner_name
+    INTO #t6
+    FROM sys.databases a
+        LEFT OUTER JOIN #t2 b
+            ON a.name = b.publisher_db
+        LEFT OUTER JOIN #t1 c
+            ON a.name = c.[Database]
+        LEFT OUTER JOIN #t3 d
+            ON a.name = d.name
+        LEFT OUTER JOIN #t8 e
+            ON a.name = e.database_name
+    ORDER BY a.name;
+END;
+ELSE
+BEGIN
+    SELECT c.*,
+           e.LastFullBackup_AsOf_20230405,
+           ISNULL(b.publication_name, '-') publication_name,
+           ISNULL(subscription_server, '-') subscription_server,
+           ISNULL(subscriber_db, '-') subscriber_db,
+           d.MirrorServer,
+           ISNULL(d.mirroring_role_desc, '-') mirroring_role,
+           d.OperatingMode,
+           d.mirroring_partner_name
+    INTO #t7
+    FROM sys.databases a
+        LEFT OUTER JOIN #t4 b
+            ON a.name = b.publisher_db
+        LEFT OUTER JOIN #t1 c
+            ON a.name = c.[Database]
+        LEFT OUTER JOIN #t3 d
+            ON a.name = d.name
+        LEFT OUTER JOIN #t8 e
+            ON a.name = e.database_name
+        ORDER BY a.name;
+END;
+
+IF OBJECT_ID('tempdb..#t6') IS NOT NULL
+    SELECT distinct  Servername ,
+                    Version,
+                    CASE DomainName
+WHEN 'WORKGROUP' THEN 'RDS'
+ELSE DomainName END DomainName,
+                    IsClustered,
+                    ActiveNode,
+                    local_net_address,
+                    [Database],
+                    [Recovery Model],
+                    LastFullBackup_AsOf_20230405,
+                    publication_name,
+                    subscription_server,
+                    subscriber_db,
+                    MirrorServer,
+                    mirroring_role,
+                    OperatingMode,
+                    mirroring_partner_name
+    FROM #t6
+    WHERE Servername IS NOT NULL;
+ELSE
+    SELECT distinct Servername ,
+                    Version,
+                    CASE DomainName
+WHEN 'WORKGROUP' THEN 'RDS'
+ELSE DomainName END DomainName,
+                    IsClustered,
+                    ActiveNode,
+                    local_net_address,
+                    [Database],
+                    [Recovery Model],
+                    CASE DomainName
+WHEN 'WORKGROUP' THEN 'RDS' 
+ELSE isnull(LastFullBackup_AsOf_20230405,'-')  END LastFullBackup_AsOf_20230405 ,
+                    publication_name,
+                    subscription_server,
+                    subscriber_db,
+                    MirrorServer,
+                    mirroring_role,
+                    OperatingMode,
+                    mirroring_partner_name
+    FROM #t7
+    WHERE Servername IS NOT NULL;
