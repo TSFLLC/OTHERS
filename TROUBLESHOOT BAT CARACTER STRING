@@ -1,0 +1,21 @@
+DECLARE @counter int = 1;
+
+DECLARE @colString varchar(10) = 'ΑΗ9Τ';  --Replace the STRING  to verified
+
+ 
+
+WHILE @counter <= DATALENGTH(@colString)
+
+  BEGIN
+
+  SELECT CHAR(ASCII(SUBSTRING(@colString, @counter, 1))) as [Character],
+
+  ASCII(SUBSTRING(@colString, @counter, 1)) as [ASCIIValue]
+
+    
+
+  SET @counter = @counter + 1
+
+  END
+
+GO
