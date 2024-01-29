@@ -1,0 +1,14 @@
+create table #DriveSpaceLeft (Drive varchar(10),
+                              [MB Free] bigint )
+
+insert #DriveSpaceLeft (Drive, [MB Free])
+   EXEC master.dbo.xp_fixeddrives;
+
+create table DrivesWithIssue (Drive varchar(10),
+                              [MB Free] bigint )
+
+insert into DrivesWithIssue 
+  select Drive, [MB Free] from #DriveSpaceLeft
+  where [MB Free] < 1000
+
+  select * from #DriveSpaceLeft 
