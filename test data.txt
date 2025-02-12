@@ -1,0 +1,1082 @@
+<MasterItinerary>
+  <SourceRefs>
+    <source name="LH" ref="SM2GCF">
+      <PNRViewRS Source="LH" SourceRef="SM2GCF" MultiSource="N">
+        <PNRIdentification TicketIssued="Y" QueueRetrieved="N" FareDataExists="N" SequenceNumber="5" Source="LH" SourceRef="SM2GCF">
+          <CreationDate>2024-01-19</CreationDate>
+          <CreationTime>10:52</CreationTime>
+          <CreationAgent>xmltf001</CreationAgent>
+          <Ownership>
+            <CRSID>F1</CRSID>
+            <Agency>78206866</Agency>
+            <PseudoCityCode>AKBX</PseudoCityCode>
+          </Ownership>
+          <CreationAgency>78206866</CreationAgency>
+          <CreationPseudoCityCode>AKBX</CreationPseudoCityCode>
+          <AgencyData>
+            <DutyCode>SU</DutyCode>
+            <IATA>78206866</IATA>
+          </AgencyData>
+          <RecordLocator>SM2GCF</RecordLocator>
+          <FLXRecordLocator>4AKZJT</FLXRecordLocator>
+          <TicketNumber Status="TICKETED" Date="2024-01-19" Time="11:52:18" UTCDate="2024-01-19" UTCTime="10:52" TicketingPCC="AKBX" TicketingIATA="78206866">22029379301366</TicketNumber>
+          <TicketInfo Source="LH">
+            <TicketNumber Status="TICKETED" Date="2024-01-19" Time="11:52:18" UTCDate="2024-01-19" UTCTime="10:52" TicketingPCC="AKBX" TicketingIATA="78206866" TicketingAgent="xmltf001">22029379301366</TicketNumber>
+            <SegmentElementNumber TicketNumber="22029379301366" Coupon="1">2</SegmentElementNumber>
+            <SegmentElementNumber TicketNumber="22029379301366" Coupon="2">3</SegmentElementNumber>
+            <SegmentElementNumber TicketNumber="22029379301366" Coupon="3">4</SegmentElementNumber>
+            <SegmentElementNumber TicketNumber="22029379301366" Coupon="4">5</SegmentElementNumber>
+            <FlightReferences Coupon="1" TicketNumber="22029379301366" BookingDate="2024-01-19" BookingTime="10:52:12.423Z">
+              <AirlineCode>LH</AirlineCode>
+              <FlightNumber>5745</FlightNumber>
+              <ClassOfService>V</ClassOfService>
+              <Date>2024-02-06</Date>
+              <Time>10:55</Time>
+              <DepartureCode>GVA</DepartureCode>
+              <ArrivalCode>FRA</ArrivalCode>
+            </FlightReferences>
+            <FlightReferences Coupon="2" TicketNumber="22029379301366" BookingDate="2024-01-19" BookingTime="10:52:12.426Z">
+              <AirlineCode>LH</AirlineCode>
+              <FlightNumber>64</FlightNumber>
+              <ClassOfService>V</ClassOfService>
+              <Date>2024-02-06</Date>
+              <Time>13:15</Time>
+              <DepartureCode>FRA</DepartureCode>
+              <ArrivalCode>FMO</ArrivalCode>
+            </FlightReferences>
+            <FlightReferences Coupon="3" TicketNumber="22029379301366" BookingDate="2024-01-19" BookingTime="10:52:12.428Z">
+              <AirlineCode>LH</AirlineCode>
+              <FlightNumber>2135</FlightNumber>
+              <ClassOfService>V</ClassOfService>
+              <Date>2024-02-08</Date>
+              <Time>09:20</Time>
+              <DepartureCode>FMO</DepartureCode>
+              <ArrivalCode>MUC</ArrivalCode>
+            </FlightReferences>
+            <FlightReferences Coupon="4" TicketNumber="22029379301366" BookingDate="2024-01-19" BookingTime="10:52:12.430Z">
+              <AirlineCode>LH</AirlineCode>
+              <FlightNumber>9432</FlightNumber>
+              <ClassOfService>V</ClassOfService>
+              <Date>2024-02-08</Date>
+              <Time>11:20</Time>
+              <DepartureCode>MUC</DepartureCode>
+              <ArrivalCode>GVA</ArrivalCode>
+            </FlightReferences>
+            <DataProtectionStatement Language="en">
+              <URL Source="IATA">http://www.iatatravelcenter.com/privacy</URL>
+              <Text Source="IATA">Data Protection Notice: Your personal data will be processed in accordance with the applicable carriers privacy policy and, if your booking is made via a reservation system provider ("GDS" ), with its privacy policy. These are available at http://www.iatatravelcenter.com/privacy or from the carrier, GDS or TSP directly. You should read this documentation, which applies to your booking and specifies, for example, how your personal data is collected, stored, used, disclosed and transferred.</Text>
+            </DataProtectionStatement>
+            <TravelerElementNumber>1</TravelerElementNumber>
+            <TicketTotal Total="37650">
+              <CurrencyCode NumberOfDecimals="2">EUR</CurrencyCode>
+              <BaseTotal Amount="13100">
+                <FiledIn>
+                  <CurrencyCode NumberOfDecimals="2">CHF</CurrencyCode>
+                  <Amount>12300</Amount>
+                </FiledIn>
+              </BaseTotal>
+              <TaxTotal Amount="24550">
+                <Tax Amount="3195">
+                  <Designator>YQ</Designator>
+                  <Description>YQI LH CARRIER IMPOSED MISC FEE</Description>
+                </Tax>
+                <Tax Amount="3195">
+                  <Designator>YQ</Designator>
+                  <Description>YQI LH CARRIER IMPOSED MISC FEE</Description>
+                </Tax>
+                <Tax Amount="3195">
+                  <Designator>YQ</Designator>
+                  <Description>YQI LH CARRIER IMPOSED MISC FEE</Description>
+                </Tax>
+                <Tax Amount="3195">
+                  <Designator>YQ</Designator>
+                  <Description>YQI LH CARRIER IMPOSED MISC FEE</Description>
+                </Tax>
+                <Tax Amount="3323">
+                  <Designator>CH</Designator>
+                  <Description>AIRPORT PASSENGER SECURITY AND NOISE CHARGE</Description>
+                </Tax>
+                <Tax Amount="1000">
+                  <Designator>DE</Designator>
+                  <Description>AIRPORT SECURITY CHARGE</Description>
+                </Tax>
+                <Tax Amount="1248">
+                  <Designator>OY</Designator>
+                  <Description>AIR TRANSPORT TAX</Description>
+                </Tax>
+                <Tax Amount="1784">
+                  <Designator>RA</Designator>
+                  <Description>PASSENGER SERVICE CHARGE INTERNATIONAL DEPARTURE</Description>
+                </Tax>
+                <Tax Amount="925">
+                  <Designator>RD</Designator>
+                  <Description>PASSENGER SERVICE CHARGE DOMESTIC ARRIVAL</Description>
+                </Tax>
+                <Tax Amount="3490">
+                  <Designator>RD</Designator>
+                  <Description>PASSENGER SERVICE CHARGE DOMESTIC DEPARTURE</Description>
+                </Tax>
+              </TaxTotal>
+            </TicketTotal>
+            <ReportingType>BSP</ReportingType>
+          </TicketInfo>
+          <ReceivedFrom>xmltf001</ReceivedFrom>
+        </PNRIdentification>
+        <FareGroup FareType="NEGO" TravelerCount="1" TotalPrice="37650" OfferID="PoP78E6FAFE-8778-4205-8C33-1" FareNumber="1" Source="LH" SourceRef="SM2GCF" NDCOfferID="PoP78E6FAFE-8778-4205-8C33-1">
+          <DataTimestamp>2401190501</DataTimestamp>
+          <TravelerGroup TypeRequested="ADT" TypePriced="ADT" TypeCount="1" TypeTotalPrice="37650" FCPICode="B" FCICode="4" NDCOfferItemID="PoIP78E6FAFE-8778-4205-8C33-1-1">
+            <TravelerElementNumber>1</TravelerElementNumber>
+            <Price Total="37650">
+              <BaseFare Amount="13100">
+                <FiledIn>
+                  <CurrencyCode NumberOfDecimals="2" Rate="1.06492207" Table="BSR">CHF</CurrencyCode>
+                  <Amount>12300</Amount>
+                  <NUCAmount>14088</NUCAmount>
+                </FiledIn>
+              </BaseFare>
+              <Taxes Amount="24550">
+                <Tax Amount="3195" Refundable="N">
+                  <Designator>YQ</Designator>
+                  <Description>YQI LH CARRIER IMPOSED MISC FEE</Description>
+                  <TaxType>YQI</TaxType>
+                  <CurrencyCode NumberOfDecimals="2" Rate="1.06492207" Table="BSR">CHF</CurrencyCode>
+                  <LocalAmount>3000</LocalAmount>
+                  <CollectionPoint Amount="3195">
+                    <AirportCode>GVA</AirportCode>
+                    <AirportAmount>3000</AirportAmount>
+                    <CurrencyCode NumberOfDecimals="2">CHF</CurrencyCode>
+                  </CollectionPoint>
+                </Tax>
+                <Tax Amount="3195" Refundable="N">
+                  <Designator>YQ</Designator>
+                  <Description>YQI LH CARRIER IMPOSED MISC FEE</Description>
+                  <TaxType>YQI</TaxType>
+                  <CurrencyCode NumberOfDecimals="2" Rate="1.06492207" Table="BSR">CHF</CurrencyCode>
+                  <LocalAmount>3000</LocalAmount>
+                  <CollectionPoint Amount="3195">
+                    <AirportCode>FRA</AirportCode>
+                    <AirportAmount>3000</AirportAmount>
+                    <CurrencyCode NumberOfDecimals="2">CHF</CurrencyCode>
+                  </CollectionPoint>
+                </Tax>
+                <Tax Amount="3195" Refundable="N">
+                  <Designator>YQ</Designator>
+                  <Description>YQI LH CARRIER IMPOSED MISC FEE</Description>
+                  <TaxType>YQI</TaxType>
+                  <CurrencyCode NumberOfDecimals="2" Rate="1.06492207" Table="BSR">CHF</CurrencyCode>
+                  <LocalAmount>3000</LocalAmount>
+                  <CollectionPoint Amount="3195">
+                    <AirportCode>FMO</AirportCode>
+                    <AirportAmount>3000</AirportAmount>
+                    <CurrencyCode NumberOfDecimals="2">CHF</CurrencyCode>
+                  </CollectionPoint>
+                </Tax>
+                <Tax Amount="3195" Refundable="N">
+                  <Designator>YQ</Designator>
+                  <Description>YQI LH CARRIER IMPOSED MISC FEE</Description>
+                  <TaxType>YQI</TaxType>
+                  <CurrencyCode NumberOfDecimals="2" Rate="1.06492207" Table="BSR">CHF</CurrencyCode>
+                  <LocalAmount>3000</LocalAmount>
+                  <CollectionPoint Amount="3195">
+                    <AirportCode>MUC</AirportCode>
+                    <AirportAmount>3000</AirportAmount>
+                    <CurrencyCode NumberOfDecimals="2">CHF</CurrencyCode>
+                  </CollectionPoint>
+                </Tax>
+                <Tax Amount="3323" Refundable="Y">
+                  <Designator>CH</Designator>
+                  <Nature>CH</Nature>
+                  <Description>AIRPORT PASSENGER SECURITY AND NOISE CHARGE</Description>
+                  <TaxType>001</TaxType>
+                  <CurrencyCode NumberOfDecimals="2" Rate="1.06492207" Table="BSR">CHF</CurrencyCode>
+                  <LocalAmount>3120</LocalAmount>
+                </Tax>
+                <Tax Amount="1000" Refundable="Y">
+                  <Designator>DE</Designator>
+                  <Nature>DE</Nature>
+                  <Description>AIRPORT SECURITY CHARGE</Description>
+                  <TaxType>001</TaxType>
+                  <CurrencyCode NumberOfDecimals="2">EUR</CurrencyCode>
+                  <LocalAmount>1000</LocalAmount>
+                </Tax>
+                <Tax Amount="1248" Refundable="Y">
+                  <Designator>OY</Designator>
+                  <Nature>DE</Nature>
+                  <Description>AIR TRANSPORT TAX</Description>
+                  <TaxType>004</TaxType>
+                  <CurrencyCode NumberOfDecimals="2">EUR</CurrencyCode>
+                  <LocalAmount>1248</LocalAmount>
+                </Tax>
+                <Tax Amount="1784" Refundable="Y">
+                  <Designator>RA</Designator>
+                  <Nature>DE</Nature>
+                  <Description>PASSENGER SERVICE CHARGE INTERNATIONAL DEPARTURE</Description>
+                  <TaxType>002</TaxType>
+                  <CurrencyCode NumberOfDecimals="2">EUR</CurrencyCode>
+                  <LocalAmount>1784</LocalAmount>
+                </Tax>
+                <Tax Amount="925" Refundable="Y">
+                  <Designator>RD</Designator>
+                  <Nature>DE</Nature>
+                  <Description>PASSENGER SERVICE CHARGE DOMESTIC ARRIVAL</Description>
+                  <TaxType>001</TaxType>
+                  <CurrencyCode NumberOfDecimals="2">EUR</CurrencyCode>
+                  <LocalAmount>925</LocalAmount>
+                </Tax>
+                <Tax Amount="3490" Refundable="Y">
+                  <Designator>RD</Designator>
+                  <Nature>DE</Nature>
+                  <Description>PASSENGER SERVICE CHARGE DOMESTIC DEPARTURE</Description>
+                  <TaxType>002</TaxType>
+                  <CurrencyCode NumberOfDecimals="2">EUR</CurrencyCode>
+                  <LocalAmount>3490</LocalAmount>
+                </Tax>
+              </Taxes>
+            </Price>
+            <CommissionGroup Amount="0">
+              <Commission Type="P" CommissionSource="X" RuleCode="RC">0.00</Commission>
+            </CommissionGroup>
+            <FareRules>
+              <FareInfo FareType="NEGO">
+                <DepartureDate>2024-02-06</DepartureDate>
+                <DepartureCode>GVA</DepartureCode>
+                <DepartureTime>10:55</DepartureTime>
+                <ArrivalCode>FMO</ArrivalCode>
+                <ArrivalDate>2024-02-06</ArrivalDate>
+                <ArrivalTime>14:05</ArrivalTime>
+                <RelatedSegment SecureFlight="N" ODRef="OD1">
+                  <SegmentIDRef OldIDRef="2">2</SegmentIDRef>
+                  <AirlineCode>LH</AirlineCode>
+                  <DepartureCode>GVA</DepartureCode>
+                  <DepartureDate>2024-02-06</DepartureDate>
+                  <DepartureTime>10:55</DepartureTime>
+                  <ArrivalCode>FRA</ArrivalCode>
+                  <ArrivalDate>2024-02-06</ArrivalDate>
+                  <ArrivalTime>12:15</ArrivalTime>
+                  <FlightNumber>5745</FlightNumber>
+                  <Cabin>Y</Cabin>
+                  <ClassOfService>V</ClassOfService>
+                  <BaggageAllowance>0PC</BaggageAllowance>
+                  <NVB>2024-02-06</NVB>
+                  <NVA>2024-02-06</NVA>
+                  <SegmentMileage>286</SegmentMileage>
+                  <StopOverIndicator>O</StopOverIndicator>
+                  <ElectronicTicketing>Y</ElectronicTicketing>
+                  <OperatingCarrier>
+                    <AirlineCode>LX</AirlineCode>
+                    <AirlineName>Swiss</AirlineName>
+                    <FlightNumber>1082</FlightNumber>
+                  </OperatingCarrier>
+                  <OperatingCarrierDisclosure>
+                    <AirlineCode>LX</AirlineCode>
+                    <AirlineName>Swiss</AirlineName>
+                    <FlightNumber>1082</FlightNumber>
+                  </OperatingCarrierDisclosure>
+                </RelatedSegment>
+                <RelatedSegment SecureFlight="N" ODRef="OD1">
+                  <SegmentIDRef OldIDRef="3">3</SegmentIDRef>
+                  <AirlineCode>LH</AirlineCode>
+                  <DepartureCode>FRA</DepartureCode>
+                  <DepartureDate>2024-02-06</DepartureDate>
+                  <DepartureTime>13:15</DepartureTime>
+                  <ArrivalCode>FMO</ArrivalCode>
+                  <ArrivalDate>2024-02-06</ArrivalDate>
+                  <ArrivalTime>14:05</ArrivalTime>
+                  <FlightNumber>64</FlightNumber>
+                  <Cabin>Y</Cabin>
+                  <ClassOfService>V</ClassOfService>
+                  <BaggageAllowance>0PC</BaggageAllowance>
+                  <NVB>2024-02-06</NVB>
+                  <NVA>2024-02-06</NVA>
+                  <SegmentMileage>151</SegmentMileage>
+                  <StopOverIndicator>X</StopOverIndicator>
+                  <ElectronicTicketing>Y</ElectronicTicketing>
+                  <OperatingCarrierDisclosure>
+                    <AirlineCode>CL</AirlineCode>
+                    <AirlineName>Lufthansa Cityline GmbH</AirlineName>
+                  </OperatingCarrierDisclosure>
+                </RelatedSegment>
+                <FareBasisCode PriceClass="Economy Light" Code="LGT00">VETLGTU0</FareBasisCode>
+                <PriceClassDescription>
+                  <Text>Miles Accrual</Text>
+                  <Text>1 carry-on bag  up to 8kg/18lbs</Text>
+                  <Text>Snacks &amp; Drinks for a charge</Text>
+                  <Text>Warning: all services may not be delivered as the requested itinerary may include flights operated by our partner airlines</Text>
+                </PriceClassDescription>
+                <FareComponent Total="19752" Fare="6549" PU="1">
+                  <FiledCurrencyCode NumberOfDecimals="2" Rate="1.06492207">CHF</FiledCurrencyCode>
+                  <CurrencyCode NumberOfDecimals="2">NUC</CurrencyCode>
+                  <FiledAmount>6150</FiledAmount>
+                  <BaseFare Amount="7044" />
+                  <Taxes Amount="13203">
+                    <Tax Amount="3195">
+                      <Designator>YQ</Designator>
+                      <Description>YQI LH CARRIER IMPOSED MISC FEE</Description>
+                      <TaxType>YQI</TaxType>
+                      <CurrencyCode NumberOfDecimals="2" Rate="1.06492207" Table="BSR">CHF</CurrencyCode>
+                      <LocalAmount>3000</LocalAmount>
+                      <CollectionPoint Amount="3195">
+                        <AirportCode>GVA</AirportCode>
+                        <AirportAmount>3000</AirportAmount>
+                        <CurrencyCode NumberOfDecimals="2">CHF</CurrencyCode>
+                      </CollectionPoint>
+                    </Tax>
+                    <Tax Amount="3195">
+                      <Designator>YQ</Designator>
+                      <Description>YQI LH CARRIER IMPOSED MISC FEE</Description>
+                      <TaxType>YQI</TaxType>
+                      <CurrencyCode NumberOfDecimals="2" Rate="1.06492207" Table="BSR">CHF</CurrencyCode>
+                      <LocalAmount>3000</LocalAmount>
+                      <CollectionPoint Amount="3195">
+                        <AirportCode>FRA</AirportCode>
+                        <AirportAmount>3000</AirportAmount>
+                        <CurrencyCode NumberOfDecimals="2">CHF</CurrencyCode>
+                      </CollectionPoint>
+                    </Tax>
+                    <Tax Amount="3323">
+                      <Designator>CH</Designator>
+                      <Nature>CH</Nature>
+                      <Description>AIRPORT PASSENGER SECURITY AND NOISE CHARGE</Description>
+                      <TaxType>001</TaxType>
+                      <CurrencyCode NumberOfDecimals="2" Rate="1.06492207" Table="BSR">CHF</CurrencyCode>
+                      <LocalAmount>3120</LocalAmount>
+                    </Tax>
+                    <Tax Amount="925">
+                      <Designator>RD</Designator>
+                      <Nature>DE</Nature>
+                      <Description>PASSENGER SERVICE CHARGE DOMESTIC ARRIVAL</Description>
+                      <TaxType>001</TaxType>
+                      <CurrencyCode NumberOfDecimals="2">EUR</CurrencyCode>
+                      <LocalAmount>925</LocalAmount>
+                    </Tax>
+                    <Tax Amount="2565">
+                      <Designator>RD</Designator>
+                      <Nature>DE</Nature>
+                      <Description>PASSENGER SERVICE CHARGE DOMESTIC DEPARTURE</Description>
+                      <TaxType>002</TaxType>
+                      <CurrencyCode NumberOfDecimals="2">EUR</CurrencyCode>
+                      <LocalAmount>2565</LocalAmount>
+                    </Tax>
+                  </Taxes>
+                  <BaseAmountGuaranteeTimeLimit>2024-01-19T23:59:59</BaseAmountGuaranteeTimeLimit>
+                  <TaxSummaryGuaranteeTimeLimit>2024-01-19T23:59:59</TaxSummaryGuaranteeTimeLimit>
+                </FareComponent>
+                <FareRefKey>NO8EJWN~MVB8ODO~MqA9JG~MqM9EU?~MpC8EKN~MO@9T~MDB8UCSJFRT.~MAW80017~MMB834/1~MBB825/5~MRO8MCFM~MPM8WJDR~MPN84./.~MP08DPT~MNP90~MNW8@BS~MQ@965~MCR9/1146~MRL81403~MAA877~MDC8N@~M?L8002./~MBS9AGD~MPS88/5~MER9704~MPQ83~M@P9704~M@Q8U~`U*saozOlEdb6P2*flxKey</FareRefKey>
+                <TicketDesignator>DXEU</TicketDesignator>
+                <AirlineCode>LH</AirlineCode>
+                <MarketName>Europe Markets</MarketName>
+                <Penalty TicketRefundable="N" Cancelable="N" Changeable="N">
+                  <FeeApplies Cancellation="N" ChangeItinerary="N" />
+                </Penalty>
+                <AdvanceTicketing>
+                  <AdvanceDeparture Unit="H" Permitted="L">72</AdvanceDeparture>
+                </AdvanceTicketing>
+                <MaximumStay>
+                  <Text>Latest return date 2025-02-06</Text>
+                </MaximumStay>
+                <FareTariff FareType="ERU">916</FareTariff>
+                <Record1FareType>ERU</Record1FareType>
+                <FareRule>XLET</FareRule>
+              </FareInfo>
+              <FareInfo FareType="NEGO">
+                <DepartureDate>2024-02-08</DepartureDate>
+                <DepartureCode>FMO</DepartureCode>
+                <DepartureTime>09:20</DepartureTime>
+                <ArrivalCode>GVA</ArrivalCode>
+                <ArrivalDate>2024-02-08</ArrivalDate>
+                <ArrivalTime>12:30</ArrivalTime>
+                <RelatedSegment SecureFlight="N" ODRef="OD2">
+                  <SegmentIDRef OldIDRef="4">4</SegmentIDRef>
+                  <AirlineCode>LH</AirlineCode>
+                  <DepartureCode>FMO</DepartureCode>
+                  <DepartureDate>2024-02-08</DepartureDate>
+                  <DepartureTime>09:20</DepartureTime>
+                  <ArrivalCode>MUC</ArrivalCode>
+                  <ArrivalDate>2024-02-08</ArrivalDate>
+                  <ArrivalTime>10:25</ArrivalTime>
+                  <FlightNumber>2135</FlightNumber>
+                  <Cabin>Y</Cabin>
+                  <ClassOfService>V</ClassOfService>
+                  <BaggageAllowance>0PC</BaggageAllowance>
+                  <NVB>2024-02-08</NVB>
+                  <NVA>2024-02-08</NVA>
+                  <SegmentMileage>318</SegmentMileage>
+                  <StopOverIndicator>O</StopOverIndicator>
+                  <ElectronicTicketing>Y</ElectronicTicketing>
+                  <OperatingCarrierDisclosure>
+                    <AirlineCode>CL</AirlineCode>
+                    <AirlineName>Lufthansa Cityline GmbH</AirlineName>
+                  </OperatingCarrierDisclosure>
+                </RelatedSegment>
+                <RelatedSegment SecureFlight="N" ODRef="OD2">
+                  <SegmentIDRef OldIDRef="5">5</SegmentIDRef>
+                  <AirlineCode>LH</AirlineCode>
+                  <DepartureCode>MUC</DepartureCode>
+                  <DepartureDate>2024-02-08</DepartureDate>
+                  <DepartureTime>11:20</DepartureTime>
+                  <ArrivalCode>GVA</ArrivalCode>
+                  <ArrivalDate>2024-02-08</ArrivalDate>
+                  <ArrivalTime>12:30</ArrivalTime>
+                  <FlightNumber>9432</FlightNumber>
+                  <Cabin>Y</Cabin>
+                  <ClassOfService>V</ClassOfService>
+                  <BaggageAllowance>0PC</BaggageAllowance>
+                  <NVB>2024-02-08</NVB>
+                  <NVA>2024-02-08</NVA>
+                  <SegmentMileage>305</SegmentMileage>
+                  <StopOverIndicator>X</StopOverIndicator>
+                  <ElectronicTicketing>Y</ElectronicTicketing>
+                  <OperatingCarrier>
+                    <AirlineCode>EN</AirlineCode>
+                    <AirlineName>Air Dolomiti</AirlineName>
+                    <FlightNumber>8070</FlightNumber>
+                  </OperatingCarrier>
+                  <OperatingCarrierDisclosure>
+                    <AirlineCode>EN</AirlineCode>
+                    <AirlineName>Air Dolomiti</AirlineName>
+                    <FlightNumber>8070</FlightNumber>
+                  </OperatingCarrierDisclosure>
+                </RelatedSegment>
+                <FareBasisCode PriceClass="Economy Light" Code="LGT00">VETLGTU0</FareBasisCode>
+                <PriceClassDescription>
+                  <Text>Miles Accrual</Text>
+                  <Text>1 carry-on bag  up to 8kg/18lbs</Text>
+                  <Text>Snacks &amp; Drinks for a charge</Text>
+                  <Text>Warning: all services may not be delivered as the requested itinerary may include flights operated by our partner airlines</Text>
+                </PriceClassDescription>
+                <FareComponent Total="17896" Fare="6549" PU="1">
+                  <FiledCurrencyCode NumberOfDecimals="2" Rate="1.06492207">CHF</FiledCurrencyCode>
+                  <CurrencyCode NumberOfDecimals="2">NUC</CurrencyCode>
+                  <FiledAmount>6150</FiledAmount>
+                  <BaseFare Amount="7044" />
+                  <Taxes Amount="11347">
+                    <Tax Amount="3195">
+                      <Designator>YQ</Designator>
+                      <Description>YQI LH CARRIER IMPOSED MISC FEE</Description>
+                      <TaxType>YQI</TaxType>
+                      <CurrencyCode NumberOfDecimals="2" Rate="1.06492207" Table="BSR">CHF</CurrencyCode>
+                      <LocalAmount>3000</LocalAmount>
+                      <CollectionPoint Amount="3195">
+                        <AirportCode>FMO</AirportCode>
+                        <AirportAmount>3000</AirportAmount>
+                        <CurrencyCode NumberOfDecimals="2">CHF</CurrencyCode>
+                      </CollectionPoint>
+                    </Tax>
+                    <Tax Amount="3195">
+                      <Designator>YQ</Designator>
+                      <Description>YQI LH CARRIER IMPOSED MISC FEE</Description>
+                      <TaxType>YQI</TaxType>
+                      <CurrencyCode NumberOfDecimals="2" Rate="1.06492207" Table="BSR">CHF</CurrencyCode>
+                      <LocalAmount>3000</LocalAmount>
+                      <CollectionPoint Amount="3195">
+                        <AirportCode>MUC</AirportCode>
+                        <AirportAmount>3000</AirportAmount>
+                        <CurrencyCode NumberOfDecimals="2">CHF</CurrencyCode>
+                      </CollectionPoint>
+                    </Tax>
+                    <Tax Amount="1000">
+                      <Designator>DE</Designator>
+                      <Nature>DE</Nature>
+                      <Description>AIRPORT SECURITY CHARGE</Description>
+                      <TaxType>001</TaxType>
+                      <CurrencyCode NumberOfDecimals="2">EUR</CurrencyCode>
+                      <LocalAmount>1000</LocalAmount>
+                    </Tax>
+                    <Tax Amount="1248">
+                      <Designator>OY</Designator>
+                      <Nature>DE</Nature>
+                      <Description>AIR TRANSPORT TAX</Description>
+                      <TaxType>004</TaxType>
+                      <CurrencyCode NumberOfDecimals="2">EUR</CurrencyCode>
+                      <LocalAmount>1248</LocalAmount>
+                    </Tax>
+                    <Tax Amount="1784">
+                      <Designator>RA</Designator>
+                      <Nature>DE</Nature>
+                      <Description>PASSENGER SERVICE CHARGE INTERNATIONAL DEPARTURE</Description>
+                      <TaxType>002</TaxType>
+                      <CurrencyCode NumberOfDecimals="2">EUR</CurrencyCode>
+                      <LocalAmount>1784</LocalAmount>
+                    </Tax>
+                    <Tax Amount="925">
+                      <Designator>RD</Designator>
+                      <Nature>DE</Nature>
+                      <Description>PASSENGER SERVICE CHARGE DOMESTIC DEPARTURE</Description>
+                      <TaxType>002</TaxType>
+                      <CurrencyCode NumberOfDecimals="2">EUR</CurrencyCode>
+                      <LocalAmount>925</LocalAmount>
+                    </Tax>
+                  </Taxes>
+                  <BaseAmountGuaranteeTimeLimit>2024-01-19T23:59:59</BaseAmountGuaranteeTimeLimit>
+                  <TaxSummaryGuaranteeTimeLimit>2024-01-19T23:59:59</TaxSummaryGuaranteeTimeLimit>
+                </FareComponent>
+                <FareRefKey>NO8EJWN~MVB8ODO~MqA9JG~MqM9EU?~MpC8EKN~MO@9T~MDB8UCSJFRT.~MAW80017~MMB834/1~MBB825/5~MRO8MCFM~MPM8WJDR~MPN84./.~MP08DPT~MNP90~MNW8@BS~MQ@965~MCR9/115.~MRL81112~MAA877~MDC8H@~M?L8002./~MBS9AGD~MPS88/5~MER9704~MPQ83~M@P9704~M@Q8U~`U*saozOlEdb6P2*flxKey</FareRefKey>
+                <TicketDesignator>DXEU</TicketDesignator>
+                <AirlineCode>LH</AirlineCode>
+                <MarketName>Europe Markets</MarketName>
+                <Penalty TicketRefundable="N" Cancelable="N" Changeable="N">
+                  <FeeApplies Cancellation="N" ChangeItinerary="N" />
+                </Penalty>
+                <AdvanceTicketing>
+                  <AdvanceDeparture Unit="H" Permitted="L">72</AdvanceDeparture>
+                </AdvanceTicketing>
+                <MaximumStay>
+                  <Text>Latest return date 2025-02-06</Text>
+                </MaximumStay>
+                <FareTariff FareType="ERU">916</FareTariff>
+                <Record1FareType>ERU</Record1FareType>
+                <FareRule>XLET</FareRule>
+              </FareInfo>
+              <TripMileage>1060</TripMileage>
+              <Penalty TicketRefundable="N" />
+              <TicketByDate Time="11:52" OverrideTicketByDate="2024-01-19" OverrideTime="23:59:59">2024-01-22</TicketByDate>
+              <Endorsement Type="A">FARE RESTRICTION MAY APPLY</Endorsement>
+              <FareCalculation>GVA LH X/FRA LH FMO70.44 LH X/MUC LH GVA70.44 NUC140.88END ROE0.873055</FareCalculation>
+            </FareRules>
+            <PricingInfo Price="Y" Reprice="Y" FareType="NEGO" StorePrice="Y" Source="LH">
+              <TravelerElementNumber>1</TravelerElementNumber>
+              <PrivateFares>
+                <Office Provider="F1">AKBX</Office>
+              </PrivateFares>
+            </PricingInfo>
+          </TravelerGroup>
+          <CurrencyCode NumberOfDecimals="2">EUR</CurrencyCode>
+          <ValidatingCarrier>LH</ValidatingCarrier>
+          <IncludedServices>
+            <Service Method="F" ReasonCode="A" SubCode="CBY" ServiceCode="OC" Type="Included" FareBrand="Economy Light">
+              <Description>1 CABIN BAGS UP TO 8KG</Description>
+              <DescriptionDetails>
+                <Text>1 CABIN BAGS UP TO 8KG</Text>
+              </DescriptionDetails>
+              <Amount>incl</Amount>
+              <ValidatingCarrier>LH</ValidatingCarrier>
+              <BookingInstructions>
+                <Method>API</Method>
+              </BookingInstructions>
+              <Diagnostics ID="0000019CA29C17E7" />
+              <SegmentElementNumber>2</SegmentElementNumber>
+              <SegmentElementNumber>3</SegmentElementNumber>
+              <TravelerElementNumber>1</TravelerElementNumber>
+            </Service>
+            <Service Method="F" ReasonCode="A" SubCode="057" ServiceCode="OC" Type="Included" FareBrand="Economy Light" Icon="MILEAGE">
+              <Description>MILEAGE ACCRUAL</Description>
+              <DescriptionDetails>
+                <Text>MILEAGE ACCRUAL</Text>
+              </DescriptionDetails>
+              <Amount>incl</Amount>
+              <ValidatingCarrier>LH</ValidatingCarrier>
+              <BookingInstructions>
+                <Method>API</Method>
+              </BookingInstructions>
+              <Diagnostics ID="0000019CA29C1BA4" />
+              <SegmentElementNumber>2</SegmentElementNumber>
+              <SegmentElementNumber>3</SegmentElementNumber>
+              <TravelerElementNumber>1</TravelerElementNumber>
+            </Service>
+            <Service Method="F" ReasonCode="A" SubCode="CBY" ServiceCode="OC" Type="Included" FareBrand="Economy Light">
+              <Description>1 CABIN BAGS UP TO 8KG</Description>
+              <DescriptionDetails>
+                <Text>1 CABIN BAGS UP TO 8KG</Text>
+              </DescriptionDetails>
+              <Amount>incl</Amount>
+              <ValidatingCarrier>LH</ValidatingCarrier>
+              <BookingInstructions>
+                <Method>API</Method>
+              </BookingInstructions>
+              <Diagnostics ID="0000019CA29C17E7" />
+              <SegmentElementNumber>4</SegmentElementNumber>
+              <SegmentElementNumber>5</SegmentElementNumber>
+              <TravelerElementNumber>1</TravelerElementNumber>
+            </Service>
+            <Service Method="F" ReasonCode="A" SubCode="057" ServiceCode="OC" Type="Included" FareBrand="Economy Light" Icon="MILEAGE">
+              <Description>MILEAGE ACCRUAL</Description>
+              <DescriptionDetails>
+                <Text>MILEAGE ACCRUAL</Text>
+              </DescriptionDetails>
+              <Amount>incl</Amount>
+              <ValidatingCarrier>LH</ValidatingCarrier>
+              <BookingInstructions>
+                <Method>API</Method>
+              </BookingInstructions>
+              <Diagnostics ID="0000019CA29C1BA4" />
+              <SegmentElementNumber>4</SegmentElementNumber>
+              <SegmentElementNumber>5</SegmentElementNumber>
+              <TravelerElementNumber>1</TravelerElementNumber>
+            </Service>
+          </IncludedServices>
+          <BaggageData>
+            <USDOT Disclosure="Not subject to US DOT and CTA Reservation or Disclosure">N</USDOT>
+            <Allowance>
+              <TravelerElementNumber>1</TravelerElementNumber>
+              <TicketBox Concept="Piece">0PC</TicketBox>
+              <MaxPieces>0</MaxPieces>
+              <MSCarrier>LH</MSCarrier>
+              <S5 uid="87250" />
+              <S7 uid="4875930" seq="84998" />
+              <Diagnostics ID="4875930" />
+              <SegmentElementNumber>2</SegmentElementNumber>
+              <SegmentElementNumber>3</SegmentElementNumber>
+            </Allowance>
+            <CarryOnAllowance>
+              <TravelerElementNumber>1</TravelerElementNumber>
+              <MaxWeightPerPiece Unit="KG">8</MaxWeightPerPiece>
+              <MaxWeightPerPiece Unit="LBS">18</MaxWeightPerPiece>
+              <MaxLengthPerPiece Unit="CM">118</MaxLengthPerPiece>
+              <MaxLengthPerPiece Unit="IN">46</MaxLengthPerPiece>
+              <MaxPieces>1</MaxPieces>
+              <BaggageDescription>
+                <Text>CARRYON HAND BAGGAGE ALLOWANCE</Text>
+                <Text>CARRY8KG 18LB UPTO46LI 118LCM</Text>
+              </BaggageDescription>
+              <MSCarrier>LX</MSCarrier>
+              <SegmentElementNumber>2</SegmentElementNumber>
+            </CarryOnAllowance>
+            <CarryOnAllowance>
+              <TravelerElementNumber>1</TravelerElementNumber>
+              <MaxWeightPerPiece Unit="KG">8</MaxWeightPerPiece>
+              <MaxWeightPerPiece Unit="LBS">18</MaxWeightPerPiece>
+              <MaxLengthPerPiece Unit="CM">118</MaxLengthPerPiece>
+              <MaxLengthPerPiece Unit="IN">46</MaxLengthPerPiece>
+              <MaxPieces>1</MaxPieces>
+              <BaggageDescription>
+                <Text>CARRYON HAND BAGGAGE ALLOWANCE</Text>
+                <Text>CARRY8KG 18LB UPTO46LI 118LCM</Text>
+              </BaggageDescription>
+              <MSCarrier>LH</MSCarrier>
+              <SegmentElementNumber>3</SegmentElementNumber>
+            </CarryOnAllowance>
+            <Bags>
+              <Bag Type="B1">
+                <Description>UPTO50LB 23KG AND62LI 158LCM</Description>
+                <ServicePrice Total="7454">
+                  <CurrencyCode NumberOfDecimals="2">EUR</CurrencyCode>
+                  <BasePrice Amount="7454" />
+                </ServicePrice>
+                <TravelerElementNumber>1</TravelerElementNumber>
+                <SegmentElementNumber>2</SegmentElementNumber>
+                <SegmentElementNumber>3</SegmentElementNumber>
+              </Bag>
+              <Bag Type="B2">
+                <Description>UPTO50LB 23KG AND62LI 158LCM</Description>
+                <ServicePrice Total="10649">
+                  <CurrencyCode NumberOfDecimals="2">EUR</CurrencyCode>
+                  <BasePrice Amount="10649" />
+                </ServicePrice>
+                <TravelerElementNumber>1</TravelerElementNumber>
+                <SegmentElementNumber>2</SegmentElementNumber>
+                <SegmentElementNumber>3</SegmentElementNumber>
+              </Bag>
+            </Bags>
+          </BaggageData>
+          <BaggageData>
+            <USDOT Disclosure="Not subject to US DOT and CTA Reservation or Disclosure">N</USDOT>
+            <Allowance>
+              <TravelerElementNumber>1</TravelerElementNumber>
+              <TicketBox Concept="Piece">0PC</TicketBox>
+              <MaxPieces>0</MaxPieces>
+              <MSCarrier>LH</MSCarrier>
+              <S5 uid="87250" />
+              <S7 uid="4875930" seq="84998" />
+              <Diagnostics ID="4875930" />
+              <SegmentElementNumber>4</SegmentElementNumber>
+              <SegmentElementNumber>5</SegmentElementNumber>
+            </Allowance>
+            <CarryOnAllowance>
+              <TravelerElementNumber>1</TravelerElementNumber>
+              <MaxWeightPerPiece Unit="KG">8</MaxWeightPerPiece>
+              <MaxWeightPerPiece Unit="LBS">18</MaxWeightPerPiece>
+              <MaxLengthPerPiece Unit="CM">118</MaxLengthPerPiece>
+              <MaxLengthPerPiece Unit="IN">46</MaxLengthPerPiece>
+              <MaxPieces>1</MaxPieces>
+              <BaggageDescription>
+                <Text>CARRYON HAND BAGGAGE ALLOWANCE</Text>
+                <Text>CARRY8KG 18LB UPTO46LI 118LCM</Text>
+              </BaggageDescription>
+              <MSCarrier>LH</MSCarrier>
+              <SegmentElementNumber>4</SegmentElementNumber>
+            </CarryOnAllowance>
+            <CarryOnAllowance>
+              <TravelerElementNumber>1</TravelerElementNumber>
+              <MaxWeightPerPiece Unit="KG">8</MaxWeightPerPiece>
+              <MaxWeightPerPiece Unit="LBS">18</MaxWeightPerPiece>
+              <MaxLengthPerPiece Unit="CM">118</MaxLengthPerPiece>
+              <MaxLengthPerPiece Unit="IN">46</MaxLengthPerPiece>
+              <MaxPieces>1</MaxPieces>
+              <BaggageDescription>
+                <Text>CARRYON HAND BAGGAGE ALLOWANCE</Text>
+                <Text>CARRY8KG 18LB UPTO46LI 118LCM</Text>
+              </BaggageDescription>
+              <MSCarrier>EN</MSCarrier>
+              <SegmentElementNumber>5</SegmentElementNumber>
+            </CarryOnAllowance>
+            <Bags>
+              <Bag Type="B1">
+                <Description>UPTO50LB 23KG AND62LI 158LCM</Description>
+                <ServicePrice Total="6000">
+                  <CurrencyCode NumberOfDecimals="2">EUR</CurrencyCode>
+                  <BasePrice Amount="6000" />
+                </ServicePrice>
+                <TravelerElementNumber>1</TravelerElementNumber>
+                <SegmentElementNumber>4</SegmentElementNumber>
+                <SegmentElementNumber>5</SegmentElementNumber>
+              </Bag>
+              <Bag Type="B2">
+                <Description>UPTO50LB 23KG AND62LI 158LCM</Description>
+                <ServicePrice Total="9000">
+                  <CurrencyCode NumberOfDecimals="2">EUR</CurrencyCode>
+                  <BasePrice Amount="9000" />
+                </ServicePrice>
+                <TravelerElementNumber>1</TravelerElementNumber>
+                <SegmentElementNumber>4</SegmentElementNumber>
+                <SegmentElementNumber>5</SegmentElementNumber>
+              </Bag>
+            </Bags>
+          </BaggageData>
+          <StoredFare>
+            <TimeStamp DateTime="2024-01-19T10:52:13.871Z" />
+            <Location Country="ES" City="BCN" />
+          </StoredFare>
+          <StoredTaxSummary>
+            <TimeStamp DateTime="2024-01-19T10:52:13.871Z" />
+            <Location Country="ES" City="BCN" />
+          </StoredTaxSummary>
+          <PriceGuaranteeTimeLimit>2024-01-19T23:59:59</PriceGuaranteeTimeLimit>
+          <BaseAmountGuaranteeTimeLimit>2024-01-19T23:59:59</BaseAmountGuaranteeTimeLimit>
+          <TaxSummaryGuaranteeTimeLimit>2024-01-19T23:59:59</TaxSummaryGuaranteeTimeLimit>
+          <SegmentElementNumber>2</SegmentElementNumber>
+          <SegmentElementNumber>3</SegmentElementNumber>
+          <SegmentElementNumber>4</SegmentElementNumber>
+          <SegmentElementNumber>5</SegmentElementNumber>
+        </FareGroup>
+        <FlownAirGroup Source="LH" SourceRef="SM2GCF">
+          <Flight BookingDate="2024-01-19" BookingTime="10:52:12.423Z" SecureFlight="N" NDCID="SGMA0831" CnxxIndicator="Y">
+            <ElementNumber>2</ElementNumber>
+            <Carrier>
+              <AirlineCode>LH</AirlineCode>
+              <FlightNumber>5745</FlightNumber>
+              <AirlineName>Deutsche Lufthansa AG</AirlineName>
+            </Carrier>
+            <ClassOfService>V</ClassOfService>
+            <Departure>
+              <Date>2024-02-06</Date>
+              <Time>10:55</Time>
+              <AirportCode>GVA</AirportCode>
+              <Terminal>1</Terminal>
+              <AirportName>Geneva International, CH</AirportName>
+            </Departure>
+            <Arrival>
+              <Date>2024-02-06</Date>
+              <Time>12:15</Time>
+              <ChangeOfDay>0</ChangeOfDay>
+              <AirportCode>FRA</AirportCode>
+              <Terminal>1</Terminal>
+              <AirportName>Frankfurt International Apt, DE</AirportName>
+            </Arrival>
+            <NumberInParty>1</NumberInParty>
+            <Equipment>
+              <Code>223</Code>
+              <Name>Airbus A220-300 Passenger</Name>
+            </Equipment>
+            <ElectronicTicketing>Y</ElectronicTicketing>
+            <NumberOfStops>0</NumberOfStops>
+            <Meals>N</Meals>
+            <FlightDuration>01:20</FlightDuration>
+            <Cabin>Y</Cabin>
+            <ActionCode>HK</ActionCode>
+            <Information>
+              <Text>PLS SEE GGAIRLH CODESHARE</Text>
+              <Text>PLS ADD PAX MOBILE CTC FOR IRREG COMMUNICATION</Text>
+            </Information>
+            <OperatingCarrier>
+              <AirlineCode>LX</AirlineCode>
+              <AirlineName>Swiss</AirlineName>
+              <FlightNumber>1082</FlightNumber>
+            </OperatingCarrier>
+            <OperatingCarrierDisclosure>
+              <AirlineCode>LX</AirlineCode>
+              <AirlineName>Swiss</AirlineName>
+              <FlightNumber>1082</FlightNumber>
+            </OperatingCarrierDisclosure>
+          </Flight>
+          <Flight BookingDate="2024-01-19" BookingTime="10:52:12.426Z" SecureFlight="N" NDCID="SGMA0832">
+            <ElementNumber>3</ElementNumber>
+            <Carrier>
+              <AirlineCode>LH</AirlineCode>
+              <FlightNumber>64</FlightNumber>
+              <AirlineName>Deutsche Lufthansa AG</AirlineName>
+            </Carrier>
+            <ClassOfService>V</ClassOfService>
+            <Departure>
+              <Date>2024-02-06</Date>
+              <Time>13:15</Time>
+              <AirportCode>FRA</AirportCode>
+              <Terminal>1</Terminal>
+              <AirportName>Frankfurt International Apt, DE</AirportName>
+            </Departure>
+            <Arrival>
+              <Date>2024-02-06</Date>
+              <Time>14:05</Time>
+              <ChangeOfDay>0</ChangeOfDay>
+              <AirportCode>FMO</AirportCode>
+              <AirportName>Muenster-Osnabrueck, DE</AirportName>
+            </Arrival>
+            <NumberInParty>1</NumberInParty>
+            <Equipment>
+              <Code>CR9</Code>
+              <Name>Canadair Regional Jet 900</Name>
+            </Equipment>
+            <ElectronicTicketing>Y</ElectronicTicketing>
+            <NumberOfStops>0</NumberOfStops>
+            <Meals>R</Meals>
+            <FlightDuration>00:50</FlightDuration>
+            <Cabin>Y</Cabin>
+            <ActionCode>HK</ActionCode>
+            <Information>
+              <Text>OPERATED BY CL</Text>
+              <Text>MAX 1 HANDLUGGAGE PER PASSENGER</Text>
+              <Text>PLS ADD PAX MOBILE CTC FOR IRREG COMMUNICATION</Text>
+            </Information>
+            <OperatingCarrierDisclosure>
+              <AirlineCode>CL</AirlineCode>
+              <AirlineName>Lufthansa Cityline GmbH</AirlineName>
+            </OperatingCarrierDisclosure>
+          </Flight>
+        </FlownAirGroup>
+        <Traveler Type="ADT" Source="LH" SourceRef="SM2GCF" NDCID="PAXA0831">
+          <ElementNumber>1</ElementNumber>
+          <TravelerName>
+            <Surname>CARPINTERO</Surname>
+            <NativeSurname>CARPINTERO</NativeSurname>
+            <GivenName>RAKEL</GivenName>
+            <NativeGivenName>RAKEL MRS</NativeGivenName>
+            <Title>MRS</Title>
+            <DateOfBirth>1978-05-10</DateOfBirth>
+            <Gender>F</Gender>
+          </TravelerName>
+        </Traveler>
+        <AirGroup Source="LH" SourceRef="SM2GCF">
+          <Flight MarriedSegment="B" MarriedRef="1" OriginDestinationID="ODLH1" BookingDate="2024-01-19" BookingTime="10:52:12.428Z" SecureFlight="N" NDCID="SGMA0833" CnxxIndicator="Y">
+            <ElementNumber>4</ElementNumber>
+            <Carrier>
+              <AirlineCode>LH</AirlineCode>
+              <FlightNumber>2135</FlightNumber>
+              <AirlineName>Deutsche Lufthansa AG</AirlineName>
+            </Carrier>
+            <ClassOfService>V</ClassOfService>
+            <Departure>
+              <Date>2024-02-08</Date>
+              <Time>09:20</Time>
+              <AirportCode>FMO</AirportCode>
+              <AirportName>Muenster-Osnabrueck, DE</AirportName>
+            </Departure>
+            <Arrival>
+              <Date>2024-02-08</Date>
+              <Time>10:25</Time>
+              <ChangeOfDay>0</ChangeOfDay>
+              <AirportCode>MUC</AirportCode>
+              <Terminal>2</Terminal>
+              <AirportName>Munich International Airport, DE</AirportName>
+            </Arrival>
+            <NumberInParty>1</NumberInParty>
+            <Equipment>
+              <Code>CR9</Code>
+              <Name>Canadair Regional Jet 900</Name>
+            </Equipment>
+            <ElectronicTicketing>Y</ElectronicTicketing>
+            <NumberOfStops>0</NumberOfStops>
+            <Meals>R</Meals>
+            <FlightDuration>01:05</FlightDuration>
+            <Cabin>Y</Cabin>
+            <ActionCode>HK</ActionCode>
+            <Information>
+              <Text>OPERATED BY CL</Text>
+              <Text>MAX 1 HANDLUGGAGE PER PASSENGER</Text>
+              <Text>PLS ADD PAX MOBILE CTC FOR IRREG COMMUNICATION</Text>
+            </Information>
+            <OperatingCarrierDisclosure>
+              <AirlineCode>CL</AirlineCode>
+              <AirlineName>Lufthansa Cityline GmbH</AirlineName>
+            </OperatingCarrierDisclosure>
+          </Flight>
+          <Flight MarriedSegment="E" MarriedRef="1" OriginDestinationID="ODLH1" BookingDate="2024-01-19" BookingTime="10:52:12.430Z" SecureFlight="N" NDCID="SGMA0834">
+            <ElementNumber>5</ElementNumber>
+            <Carrier>
+              <AirlineCode>LH</AirlineCode>
+              <FlightNumber>9432</FlightNumber>
+              <AirlineName>Deutsche Lufthansa AG</AirlineName>
+            </Carrier>
+            <ClassOfService>V</ClassOfService>
+            <Departure>
+              <Date>2024-02-08</Date>
+              <Time>11:20</Time>
+              <AirportCode>MUC</AirportCode>
+              <Terminal>2</Terminal>
+              <AirportName>Munich International Airport, DE</AirportName>
+            </Departure>
+            <Arrival>
+              <Date>2024-02-08</Date>
+              <Time>12:30</Time>
+              <ChangeOfDay>0</ChangeOfDay>
+              <AirportCode>GVA</AirportCode>
+              <AirportName>Geneva International, CH</AirportName>
+              <Terminal>0</Terminal>
+            </Arrival>
+            <NumberInParty>1</NumberInParty>
+            <Equipment>
+              <Code>E95</Code>
+              <Name>Embraer 195</Name>
+            </Equipment>
+            <ElectronicTicketing>Y</ElectronicTicketing>
+            <NumberOfStops>0</NumberOfStops>
+            <Meals>G</Meals>
+            <FlightDuration>01:10</FlightDuration>
+            <Cabin>Y</Cabin>
+            <ActionCode>HK</ActionCode>
+            <Information>
+              <Text>PLS SEE GGAIRLH CODESHARE</Text>
+              <Text>PLS ADD PAX MOBILE CTC FOR IRREG COMMUNICATION</Text>
+            </Information>
+            <OperatingCarrier>
+              <AirlineCode>EN</AirlineCode>
+              <AirlineName>Air Dolomiti</AirlineName>
+              <FlightNumber>8070</FlightNumber>
+            </OperatingCarrier>
+            <OperatingCarrierDisclosure>
+              <AirlineCode>EN</AirlineCode>
+              <AirlineName>Air Dolomiti</AirlineName>
+              <FlightNumber>8070</FlightNumber>
+            </OperatingCarrierDisclosure>
+          </Flight>
+        </AirGroup>
+        <BillingAndDeliveryData Source="LH" SourceRef="SM2GCF">
+          <FormOfPayment TotalAmount="37650" CurrencyCode="EUR" Source="LH" SourceRef="SM2GCF">
+            <ElementNumber>4</ElementNumber>
+            <TravelerElementNumber>1</TravelerElementNumber>
+            <Other>CASH</Other>
+            <NDCOrderItemID>PoIP78E6FAFE-8778-4205-8C33-1-1</NDCOrderItemID>
+          </FormOfPayment>
+        </BillingAndDeliveryData>
+        <SpecialServiceRequest Source="LH" SourceRef="SM2GCF">
+          <ElementNumber>5</ElementNumber>
+          <Association>
+            <TravelerElementNumber>1</TravelerElementNumber>
+          </Association>
+          <SSRCode>DOCA</SSRCode>
+          <ActionCode>HK</ActionCode>
+          <AirlineCode>LH</AirlineCode>
+          <AirlineName>Deutsche Lufthansa AG</AirlineName>
+          <Text>D/ES/154164 Carrer Almogavers/Barcelona/Barcelona/08018</Text>
+        </SpecialServiceRequest>
+        <SpecialServiceRequest Source="LH" SourceRef="SM2GCF">
+          <ElementNumber>6</ElementNumber>
+          <SegmentElementNumber>2</SegmentElementNumber>
+          <Association>
+            <TravelerElementNumber>1</TravelerElementNumber>
+          </Association>
+          <ActionCode>HK</ActionCode>
+          <AirlineCode>LH</AirlineCode>
+          <AirlineName>Deutsche Lufthansa AG</AirlineName>
+          <SSRCode>TKNE</SSRCode>
+          <Text>2202937930136C1</Text>
+        </SpecialServiceRequest>
+        <SpecialServiceRequest Source="LH" SourceRef="SM2GCF">
+          <ElementNumber>7</ElementNumber>
+          <SegmentElementNumber>3</SegmentElementNumber>
+          <Association>
+            <TravelerElementNumber>1</TravelerElementNumber>
+          </Association>
+          <ActionCode>HK</ActionCode>
+          <AirlineCode>LH</AirlineCode>
+          <AirlineName>Deutsche Lufthansa AG</AirlineName>
+          <SSRCode>TKNE</SSRCode>
+          <Text>2202937930136C2</Text>
+        </SpecialServiceRequest>
+        <SpecialServiceRequest Source="LH" SourceRef="SM2GCF">
+          <ElementNumber>8</ElementNumber>
+          <SegmentElementNumber>4</SegmentElementNumber>
+          <Association>
+            <TravelerElementNumber>1</TravelerElementNumber>
+          </Association>
+          <ActionCode>HK</ActionCode>
+          <AirlineCode>LH</AirlineCode>
+          <AirlineName>Deutsche Lufthansa AG</AirlineName>
+          <SSRCode>TKNE</SSRCode>
+          <Text>2202937930136C3</Text>
+        </SpecialServiceRequest>
+        <SpecialServiceRequest Source="LH" SourceRef="SM2GCF">
+          <ElementNumber>9</ElementNumber>
+          <SegmentElementNumber>5</SegmentElementNumber>
+          <Association>
+            <TravelerElementNumber>1</TravelerElementNumber>
+          </Association>
+          <ActionCode>HK</ActionCode>
+          <AirlineCode>LH</AirlineCode>
+          <AirlineName>Deutsche Lufthansa AG</AirlineName>
+          <SSRCode>TKNE</SSRCode>
+          <Text>2202937930136C4</Text>
+        </SpecialServiceRequest>
+        <SpecialServiceRequest Source="LH" SourceRef="SM2GCF">
+          <ElementNumber>10</ElementNumber>
+          <SSRCode>OTHS</SSRCode>
+          <AirlineCode>LH</AirlineCode>
+          <Text>FREE SHORT CONNEX SEATING BY LH</Text>
+        </SpecialServiceRequest>
+        <APIS Source="LH" SourceRef="SM2GCF">
+          <ElementNumber>11</ElementNumber>
+          <TravelerElementNumber>1</TravelerElementNumber>
+          <StayingAt AddressType="D">
+            <Address>154164 Carrer Almogavers</Address>
+            <City>Barcelona</City>
+            <StateCode>Barcelona</StateCode>
+            <CountryCode>ES</CountryCode>
+            <PostalCode>08018</PostalCode>
+          </StayingAt>
+          <AirlineCode>LH</AirlineCode>
+          <SSRCode>DOCA</SSRCode>
+        </APIS>
+        <Endorsement Source="LH" SourceRef="SM2GCF">
+          <ElementNumber>12</ElementNumber>
+          <FareNumberRef>1</FareNumberRef>
+          <Text>FARE RESTRICTION MAY APPLY</Text>
+          <TravelerElementNumber>1</TravelerElementNumber>
+          <SegmentElementNumber>2</SegmentElementNumber>
+          <SegmentElementNumber>3</SegmentElementNumber>
+          <SegmentElementNumber>4</SegmentElementNumber>
+          <SegmentElementNumber>5</SegmentElementNumber>
+        </Endorsement>
+        <ValidatingCarrier Source="LH" SourceRef="SM2GCF">
+          <ElementNumber>13</ElementNumber>
+          <AirlineCode>LH</AirlineCode>
+        </ValidatingCarrier>
+        <Telephone OperationalContact="Y" Source="LH" SourceRef="SM2GCF">
+          <TelephoneNumber>0041787344002</TelephoneNumber>
+          <ElementNumber>14</ElementNumber>
+        </Telephone>
+        <Seat UTCDate="2024-02-06" UTCTime="04:21:00.657Z" Source="LH" SourceRef="SM2GCF">
+          <ElementNumber>15</ElementNumber>
+          <SegmentElementNumber>4</SegmentElementNumber>
+          <SeatStatus>HK</SeatStatus>
+          <Assignment>
+            <TravelerElementNumber>1</TravelerElementNumber>
+            <SeatLocation>12F</SeatLocation>
+          </Assignment>
+          <SSRCode>RQST</SSRCode>
+        </Seat>
+        <PendingNotifications Source="LH" SourceRef="SM2GCF">
+          <PendingNotification Time="11:08:31" Date="2024-02-07" Type="Message" Source="LH" SourceRef="SM2GCF">
+            <ElementNumber>16</ElementNumber>
+            <Message>
+              <PlacementReason>Operational Email Deleted by LH</PlacementReason>
+              <PlacementComment>RAKEL.CARPINTERO@ACIMMUNE.COM</PlacementComment>
+              <TBD />
+            </Message>
+          </PendingNotification>
+        </PendingNotifications>
+        <EmailAddress OperationalContact="Y" Source="LH" SourceRef="SM2GCF">
+          <Email>RAKELCARPIN@HOTMAIL.COM</Email>
+          <ElementNumber>17</ElementNumber>
+        </EmailAddress>
+      </PNRViewRS>
+    </source>
+  </SourceRefs>
+</MasterItinerary>
