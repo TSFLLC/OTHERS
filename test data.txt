@@ -1080,3 +1080,43 @@
     </source>
   </SourceRefs>
 </MasterItinerary>
+
+
+
+
+
+
+
+
+DECLARE @xml XML = 
+'<MasterItinerary>
+  <SourceRefs>
+    <source name="LH" ref="SM2GCF">
+      <PNRViewRS Source="LH" SourceRef="SM2GCF" MultiSource="N">
+        <SpecialServiceRequest Source="LH" SourceRef="SM2GCF">
+          <ElementNumber>5</ElementNumber>
+          <SSRCode>DOCA</SSRCode>
+          <ActionCode>HK</ActionCode>
+          <AirlineCode>LH</AirlineCode>
+          <AirlineName>Deutsche Lufthansa AG</AirlineName>
+          <Text>D/ES/154164 Carrer Almogavers/Barcelona/Barcelona/08018</Text>
+        </SpecialServiceRequest>
+        <SpecialServiceRequest Source="LH" SourceRef="SM2GCF">
+          <ElementNumber>6</ElementNumber>
+          <SegmentElementNumber>2</SegmentElementNumber>
+          <SSRCode>TKNE</SSRCode>
+          <AirlineCode>LH</AirlineCode>
+          <AirlineName>Deutsche Lufthansa AG</AirlineName>
+          <Text>2202937930136C1</Text>
+        </SpecialServiceRequest>
+      </PNRViewRS>
+    </source>
+  </SourceRefs>
+</MasterItinerary>';
+
+WITH XMLNAMESPACES(DEFAULT 'your_namespace_if_any')
+SELECT 
+    ssr.value('(SSRCode/text())[1]', 'NVARCHAR(50)') AS SSR_Code,
+    ssr.value('(AirlineName/text())[1]', 'NVARCHAR(100)') AS Airline_Name
+FROM @xml.nodes('/MasterItinerary/SourceRefs/source/PNRViewRS/SpecialServiceRequest') AS S(sr)
+CROSS APPLY sr.nodes('.') AS T(ssr);
